@@ -1,3 +1,4 @@
+import { IonButton, IonActionSheet } from '@ionic/react';
 import './ExploreContainer.css';
 
 interface ContainerProps { }
@@ -5,8 +6,33 @@ interface ContainerProps { }
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <IonButton id="open-action-sheet">Open</IonButton>
+      <IonActionSheet
+        trigger="open-action-sheet"
+        header="Actions"
+        buttons={[
+          {
+            text: 'Delete',
+            role: 'destructive',
+            data: {
+              action: 'delete',
+            },
+          },
+          {
+            text: 'Share',
+            data: {
+              action: 'share',
+            },
+          },
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            data: {
+              action: 'cancel',
+            },
+          },
+        ]}
+      ></IonActionSheet>
     </div>
   );
 };
