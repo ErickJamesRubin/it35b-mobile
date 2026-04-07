@@ -34,7 +34,7 @@ const Menu:React.FC = () => {
                         ))}
 
                         <IonButton routerLink="/" routerDirection="back" expand="full">
-                            <IonIcon icon={logOutOutline} slot="start"></IonIcon>
+                            <IonIcon icon={logOutOutline} slot="start"></IonIcon>Logout
                         </IonButton>
 
                     </IonContent>
@@ -44,7 +44,7 @@ const Menu:React.FC = () => {
                 <IonRouterOutlet id="main">
                     <Route exact path="/app/home" component={Home}></Route>
                     <Route exact path="/app">
-                        <Redirect to="/app/home" />
+                        <Redirect to="/app/home"/>
                     </Route>
 
                     <Route exact path="/app/about" component={About}></Route>
