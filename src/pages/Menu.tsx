@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonIcon, IonItem, IonMenu, IonMenuButton, IonMenuToggle, IonPage, IonRoute, IonRouterOutlet, IonSplitPane, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonIcon, IonItem, IonLabel, IonMenu, IonMenuButton, IonMenuToggle, IonPage, IonRoute, IonRouterOutlet, IonSplitPane, IonTitle, IonToolbar } from '@ionic/react';
 import { Redirect, Route } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
@@ -21,6 +21,7 @@ const Menu:React.FC = () => {
                             <IonTitle>Menu</IonTitle>
                         </IonToolbar>
                     </IonHeader>
+
                     {/* Content */}
                     <IonContent>
                         {path.map((item,index) => (
@@ -28,8 +29,8 @@ const Menu:React.FC = () => {
                                 <IonItem routerLink={item.url} routerDirection="forward">
                                     <IonIcon></IonIcon>
                                     <IonIcon icon={item.icon} slot="start"></IonIcon>
+                                    <IonLabel>{item.name}</IonLabel>
                                 </IonItem>
-
                             </IonMenuToggle>
                         ))}
 

@@ -5,9 +5,7 @@ const About:React.FC = () => {
         <IonPage>
             <IonHeader>
                     <IonToolbar>
-                        <IonButton slot="start">
-                            <IonMenuButton></IonMenuButton>
-                        </IonButton>
+                        <IonMenuButton slot="start"></IonMenuButton>
                         <IonTitle>About</IonTitle>
                 </IonToolbar>
             </IonHeader>

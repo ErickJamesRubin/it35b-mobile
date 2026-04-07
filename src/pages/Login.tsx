@@ -9,9 +9,7 @@ const Login:React.FC = () => {
         <IonPage>
             <IonHeader>
                     <IonToolbar>
-                        <IonButton slot="start">
-                            <IonMenuButton></IonMenuButton>
-                        </IonButton>
+                        <IonTitle>Login</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
