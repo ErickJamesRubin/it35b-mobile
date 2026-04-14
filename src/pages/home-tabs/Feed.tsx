@@ -1,13 +1,13 @@
-import { IonButton, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
 const Feed:React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
                     <IonToolbar>
-                        <IonButton slot="start">
+                        <IonButtons slot="start">
                             <IonMenuButton></IonMenuButton>
-                        </IonButton>
+                        </IonButtons>
                         <IonTitle>Feed</IonTitle>
                 </IonToolbar>
             </IonHeader>
